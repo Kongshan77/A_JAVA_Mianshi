@@ -157,5 +157,14 @@
     }
   }
   ```
-
+  * 运算符优先级
+    * ![alt text](../img/05b3c86502d19a0490cf0f30901faa1.png)
+  
+  * 原码/反码/补码
+    * ![alt text](a60c92a0b7395cfb57b21d6958c20c8.png)
+    * ![alt text](../img/aa1354c634d84a4d5dcc8481de40c41.png)
+    * ![alt text](../img/252c06d384c9bd4e5011739b919f1dd.png)
+    * ![alt text](297ceff18c4ea559b47c5834d855b46.png)
+    * ![alt text](../img/0d9d7c0de4c2c0be9c7579f0fef20d1.png)
+    * ![alt text](6731d9d2072ebfc1f986f34fd071961.png)
 ---
