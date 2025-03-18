@@ -498,10 +498,115 @@ public class Main {
 }
 
 ```
-Testing
 
 ## 3、方法
+* 方法为最小执行单元
+* 重复的方法，具有独立功能的代码可以抽到方法中封装成独立模块进行后续复用，避免重复造轮子
+* 提高复用性/提高可维护性
+```java
+/**
+ * 类似上列冒泡排序方法
+ * 
+ */
+//编写bubbleSort方法进行冒泡排序
+  public static void bubbleSort(int[] arr) {
+    //比如此时 1 2 3 4 5 共5个数，那么需要进行比较的次数为 4+3+2+1 = 10次
+    int n = array.length;
+    for ( int i = 0; i < n - 1; i++) {
+      for (int j = 0;j < n-i-1; i++) {
+        if ( array[j] > array[j+1]) {
+          int temp = array[j];
+          array[j] = array[j+1];
+          array[j+1] = temp;
+        }
+              
+      }
+    }
+  }
 
+```
+---
+```java
+//方法定义：
+ public static 返回值类型 方法名 (参数) {
+  方法体;
+  return 返回值;
+ }
+ /**
+  * 最简单的方法定义
+  * 调用方式
+  */
+ public static void main(String[] args){
+  方法名();
+ }
+ public static void 方法名 () {
 
+ }
+ /**
+  * 带参数的方法定义
+  * 调用方式
+  * public static void 方法名 (参数) {
+  * 
+  * }
+  */
+public static void main(String[] args) {
+  getsum(num1,num2,num3)
+}
+
+public static void getsum (int num1,num2,num3) {
+  int total = num1 + num2 + num3;
+  return total;
+}
+
+/**
+ * 准确格式如下
+ * 定义方法求和
+ */
+package com.method1;
+
+public class Main {
+  public static void main(String[] args) {
+    //先在main方法里面定义一个sum，并且通过 int sum = getsum(10,20)的方法传递
+    int sum = getsum(10,20);
+    System.out.println(sum);
+  }
+  /**
+   * 定义getsum方法，注意方法返回值方式为int,则为
+   * public static int getsum(int num1,int num2) {
+   *  int sum = num1 + num2;
+   *  return sum;
+   * }
+   */
+  
+  public static int getsum(int num1,int num2) {
+    int sum = num1 + num2;
+    return sum;
+  }
+}
+
+ /**
+  * 带返回值的方法定义
+  * 调用方式
+  * 1、方法不调用就不执行
+  * 2、方法之间是平级，不能相互嵌套定义
+  * 3、方法的编写顺序同执行顺序无关
+  * 4、方法的返回值为void时候，没有返回值；如果void的时候则无需写return，如果编写return则后面不能携带具体的数据
+  * 5、return下方编写的代码不执行
+  */
+```
+2、方法的重载：
+* 在同一个类中，定义了多个方法，这些同名的方法具有相同的功能
+* 每一个方法具有不同的参数类型或参数个数，这些同名的方法构成了重载关系
+
+3、三个练习
+
+* 设计一个方法用于数组遍历，要求遍历的结果是在同一行上，例如：[11,22,33,44,55]
+```java
+package method1;
+
+import 
+```
+* 设计一个方法求数组的最大值，并且将最大值返回
+* 设计一个方法判断数组中的某一个数是否存在，将结果返回给调用处
 ## 4、综合练习
 
